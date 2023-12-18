@@ -1,0 +1,18 @@
+{
+  "plantBuddy": {
+    "readings": [
+      {
+        "temp": 20.78838158,
+        "humidity": 65.69811249,
+        "moisture": 26,
+        "timestamp": 37630
+      },
+      {
+        "temp": 20.81838226,
+        "humidity": 65.10366058,
+        "moisture": 25,
+        "timestamp": 44594
+      }
+    ]
+  }
+}
