@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Plant Buddy</title>
+</head>
+<body>
+  <h1>Data</h1>
+  <div id="data">
+    <p>Temperature: <span id="temperature"></span>°C</p>
+    <p>Humidity: <span id="humidity"></span>%</p>
+    <p>Moisture: <span id="moisture"></span>%</p>
+    <p>Timestamp: <span id="timestamp"></span></p>
+  </div>
+
+  <script src="data.js" type="module"></script>
+  <script type="module">
+    import { updateLatestDataOnPage } from './data.js';
+    window.onload = () => {
+        updateLatestDataOnPage();
+    };
+</script>
+
+</body>
+</html>

@@ -2,16 +2,184 @@
   "plantBuddy": {
     "readings": [
       {
-        "temp": 20.78838158,
-        "humidity": 65.69811249,
-        "moisture": 26,
-        "timestamp": 37630
+        "temp": 15.85999966,
+        "humidity": 86.37841034,
+        "moisture": 27,
+        "timestamp": 33726
       },
       {
-        "temp": 20.81838226,
-        "humidity": 65.10366058,
+        "temp": 15.62838173,
+        "humidity": 83.64685822,
+        "moisture": 27,
+        "timestamp": 40690
+      },
+      {
+        "temp": 15.65838146,
+        "humidity": 82.02942657,
+        "moisture": 27,
+        "timestamp": 47654
+      },
+      {
+        "temp": 15.6883812,
+        "humidity": 81.01821899,
+        "moisture": 27,
+        "timestamp": 54618
+      },
+      {
+        "temp": 15.7283392,
+        "humidity": 80.19484711,
+        "moisture": 26,
+        "timestamp": 61581
+      },
+      {
+        "temp": 15.76838207,
+        "humidity": 79.57180786,
+        "moisture": 27,
+        "timestamp": 68545
+      },
+      {
+        "temp": 15.79838085,
+        "humidity": 79.04689026,
+        "moisture": 27,
+        "timestamp": 75509
+      },
+      {
+        "temp": 15.83838177,
+        "humidity": 78.70043182,
+        "moisture": 27,
+        "timestamp": 82473
+      },
+      {
+        "temp": 15.87833881,
+        "humidity": 78.33594513,
+        "moisture": 27,
+        "timestamp": 89436
+      },
+      {
+        "temp": 15.91838169,
+        "humidity": 78.01111603,
+        "moisture": 27,
+        "timestamp": 96400
+      },
+      {
+        "temp": 19.29000092,
+        "humidity": 70.3781662,
+        "moisture": 27,
+        "timestamp": 128733
+      },
+      {
+        "temp": 19.05838203,
+        "humidity": 68.08909607,
+        "moisture": 27,
+        "timestamp": 135697
+      },
+      {
+        "temp": 19.08838272,
+        "humidity": 66.5674057,
+        "moisture": 27,
+        "timestamp": 142661
+      },
+      {
+        "temp": 17.10000038,
+        "humidity": 78.36437225,
+        "moisture": 24,
+        "timestamp": 239663
+      },
+      {
+        "temp": 16.99838257,
+        "humidity": 73.91138458,
         "moisture": 25,
-        "timestamp": 44594
+        "timestamp": 46192
+      },
+      {
+        "temp": 17.02838326,
+        "humidity": 73.01870728,
+        "moisture": 24,
+        "timestamp": 53156
+      },
+      {
+        "temp": 17.0683403,
+        "humidity": 72.37319183,
+        "moisture": 25,
+        "timestamp": 60119
+      },
+      {
+        "temp": 17.09838295,
+        "humidity": 71.9131546,
+        "moisture": 24,
+        "timestamp": 67083
+      },
+      {
+        "temp": 17.01838303,
+        "humidity": 76.29110718,
+        "moisture": 25,
+        "timestamp": 55444
+      },
+      {
+        "temp": 17.05838203,
+        "humidity": 74.68319702,
+        "moisture": 24,
+        "timestamp": 62408
+      },
+      {
+        "temp": 18.60000038,
+        "humidity": 77.53562927,
+        "moisture": 25,
+        "timestamp": 39763
+      },
+      {
+        "temp": 18.3683815,
+        "humidity": 75.01243591,
+        "moisture": 24,
+        "timestamp": 46727
+      },
+      {
+        "temp": 18.39838219,
+        "humidity": 73.56382751,
+        "moisture": 24,
+        "timestamp": 53691
+      },
+      {
+        "temp": 18.42838287,
+        "humidity": 72.5940094,
+        "moisture": 24,
+        "timestamp": 60655
+      },
+      {
+        "temp": 18.46833992,
+        "humidity": 71.90055084,
+        "moisture": 25,
+        "timestamp": 67618
+      },
+      {
+        "temp": 18.49838257,
+        "humidity": 71.56941986,
+        "moisture": 24,
+        "timestamp": 74582
+      },
+      {
+        "temp": 18.53838158,
+        "humidity": 71.12090302,
+        "moisture": 24,
+        "timestamp": 81546
+      },
+      {
+        "temp": 18.56838226,
+        "humidity": 70.83224487,
+        "moisture": 24,
+        "timestamp": 88510
+      },
+      {
+        "temp": 18.60834122,
+        "humidity": 70.56942749,
+        "moisture": 25,
+        "timestamp": 95473
+      },
+      {
+        "temp": 18.63838196,
+        "humidity": 70.41179657,
+        "moisture": 25,
+        "timestamp": 102437
       }
     ]
   }
