@@ -12,7 +12,13 @@ This project uses an arduino IoT kit for monitoring my plants moisture, ambient 
 
 ## Run instructions 
 - navigate to project folder on terminal
-- run npm init
+- npm init
 - npm install mqtt
+- npm install fs
 - npm install --save mysql2
-- node subscriber.js -> sub to topic + send data to aws db 
+- npm install openai
+- npm install dotenv
+- npm install express
+- npm install cors <--- to fetch data from different domains and hosts
+- npm install node-fetch (ensure package.json has type: "module",)
+- run -> node subscriber.js -> sub to topic + send data to aws db 

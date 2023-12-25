@@ -1,15 +1,22 @@
+/* This script is responsible for subscribing to a mqtt broker, retrieving the data,
+parsing it into correct JSON format, loading the data into a separate file & lastly publishing it
+to a aws cloud based db */
+
 import fs from 'fs';
 import mysql from 'mysql2/promise';
 import mqtt from 'mqtt';
+import 'dotenv/config';
 
 const client = mqtt.connect('mqtt://broker.emqx.io');
 const topic = '/bakaichi/plantBuddy'; // Your MQTT topic
 
-const HOST = 'svc-52994ce9-bc4c-48f7-bf26-0a51c1d63461-dml.aws-ireland-2.svc.singlestore.com';
-const USER = 'admin';
-const PASSWORD = 'v9Fmbz06jgSZ5wxRO10AjttHaJcbm2Wt';
-const DATABASE = 'plantbuddy';
+// single store sql db setup
+const HOST = process.env.DB_HOST;
+const USER = process.env.DB_USER;
+const PASSWORD = process.env.DB_PASSWORD;
+const DATABASE = process.env.DB_DATABASE;
 
+// insert fetched data into singlestore db
 async function create({ singleStoreConnection, temp, humidity, moisture, timestamp }) {
     const [results] = await singleStoreConnection.execute(
         'INSERT INTO plant_readings (temp, humidity, moisture, timestamp) VALUES (?, ?, ?, ?)',
@@ -25,6 +32,8 @@ client.on('connect', function(){
         }
     })
 })
+
+// sending data from mqtt to single store sql table
 
 client.on('message', async function (topic, message) {
     let messageStr = message.toString();
@@ -43,7 +52,6 @@ client.on('message', async function (topic, message) {
         // Write received MQTT data to mqttData.json file
         writeDataToFile(data);
 
-        // Insert received MQTT data into SingleStore database
         const singleStoreConnection = await mysql.createConnection({
             host: HOST,
             user: USER,
@@ -66,7 +74,7 @@ client.on('message', async function (topic, message) {
     }
 });
 
-// Utility functions
+// checking if data is in valid JSON format
 function isValidJSONString(str) {
     try {
         JSON.parse(str);

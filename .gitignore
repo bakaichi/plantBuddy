@@ -49,3 +49,6 @@ jspm_packages
 .yarn-integrity
 
 package-lock.json
+
+# sensitive info api keys etc.
+.env
