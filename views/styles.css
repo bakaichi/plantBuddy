@@ -1,0 +1,242 @@
+@font-face {
+    font-family: stretch;
+    src: url(./fonts/StretchPro.otf);
+}
+
+@font-face {
+    font-family: unigeo;
+    src: url(./fonts/Unigeo64-Regular-trial.ttf);
+}
+
+body {
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: relative;
+    background: linear-gradient(to bottom, #465C03, #465C03, #101504, #0E1304, #0E1304);
+}
+
+#title {
+    font-family: stretch;
+    color: #ffff;
+    font-size: 65px;
+    z-index: -1;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#intro-img {
+    position: relative;
+    text-align: center;
+}
+
+#landing-img {
+    position: relative;
+    z-index: 3;
+}
+
+.glow {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    width: 200px; 
+    height: 300px;
+    background: rgba(195, 255, 0, 0.3);
+    box-shadow: 0 0 80px 60px rgba(195, 255, 0, 1);
+    z-index: 1;
+}
+
+.shadow {
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    width: 285px; 
+    height: 140px;
+    background: rgba(0, 0, 0);
+    box-shadow: 0 0 70px 50px rgba(0, 0, 0, 0.9);
+    z-index: 1;
+}
+
+#intro {
+    text-align: center;
+    position: relative;
+}
+
+#intro-title {
+    color: #C3FF00;
+    padding-top: 3em;
+    font-family: stretch;
+    font-size: 12px;
+    letter-spacing: 4px;
+
+}
+
+#tagline {
+    font-family: unigeo;
+    color: #C3FF00;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+#about {
+    margin-top: 4em;
+    text-align: center;
+}
+
+#about-title {
+    font-family: stretch;
+    color: #C3FF00;
+    font-size: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#about-body {
+    font-family: unigeo;
+    color: #C3FF00;
+    font-size: 14px;
+    line-height: 2ch;
+}
+
+#box-75 {
+    width: 75%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 35px;
+    padding: 20px;
+    background: linear-gradient(to bottom, rgba(0,0,0, 0.1), rgba(14,19,4, 0.3));
+    box-shadow: 
+    inset 0 4 4.9px rgba(255, 255, 255, 0.5), 
+    0px 4px 4px rgba(0, 0, 0, 0.4);
+    
+}
+
+
+#box-25 {
+    width: 25%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 35px;
+    padding: 20px;
+    background: linear-gradient(to bottom, rgba(0,0,0, 0.1), rgba(14,19,4, 0.3));
+    box-shadow: 
+    inset 0 4 4.9px rgba(255, 255, 255, 0.05), 
+    0px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+#data {
+    text-align: center;
+}
+
+.hero {
+    margin-top: 16px;
+    background: linear-gradient(to bottom, #0A0F01, #4E1C04 );
+    width: 100%;
+    border: 1px solid #0E1304;
+    border-radius: 35px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+#data-title {
+    padding-top: 20px;
+    font-family: stretch;
+    color: #F6FA83;
+    font-size: 10px;
+}
+
+#data-animate {
+    font-family: stretch;
+    font-size: 60px;
+    color: #F6FA83;
+    z-index: 0;
+    position: absolute;
+    display: inline-block;
+    white-space: nowrap;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes slideRightToLeft {
+    from {
+        transform: translateX(25%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#data-animate {
+    animation: slideRightToLeft 10s linear infinite;
+}
+
+#data-row-img {
+    position: relative;
+}
+
+#readings {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+#about-img {
+    width: 100%;
+}
+
+.simple-readings {
+    font-family: unigeo;
+    font-size: 16px;
+    margin-top: 2em;
+    margin-bottom: 4em;
+    width: 100%;
+    background: linear-gradient(to bottom, #F6FA83, #C3FF00);
+    border: 1px solid #0E1304;
+    border-radius: 35px;
+}
+
+#reading-display {
+    padding: 10%;
+}
+
+#circle {
+    border: 1px solid;
+    color: #F6FA83;
+    width: 370px;
+    height: 370px;
+    border-radius: 100%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+#square {
+    border: 1px solid;
+    color: #F6FA83;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 30%; 
+    left: 50%;   
+    z-index: 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+  
+}
+
+#data-img {
+    position: relative;
+    z-index: 1;
+}

@@ -1,24 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Plant Buddy</title>
-    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+
+    <title>Plant Buddy</title>    
 </head>
 <body>
-    <h2>Welcome</h2>
-    <div id="welcome">
-        <p>Plant Buddy, plant monitoring system for your home.</p>
-    </div>
+    <section id="intro">
+        <div id="title">
+            <h1>PPLANNT <span id="title-2"><br>BUDDY</span></h1>
+        </div>
+        <div id="intro-img">
+            <img id="landing-img" src="./img/landing.png">
+            <div class="glow"></div>
+            <div class="shadow"></div>
+        </div>
+        <div id="intro-text">
+            <h2 id="intro-title">GET EXCITED!</h2>
+            <div id="tagline">
+                <p>your digital friend <br> with the extra green <br> thumb</p>
+            </div>
+        </div>
+    </section>
 
-    <h1>Data</h1>
-    <div id="data">
-        <p>Temperature: <span id="temperature"></span>°C</p>
-        <p>Humidity: <span id="humidity"></span>%</p>
-        <p>Moisture: <span id="moisture"></span>%</p>
-        <p>Timestamp: <span id="timestamp"></span></p>
-        <p>AI Comment: <span id="aiComment"></span></p>
-    </div>
+    <section id="about">
+        <div class="row">
+            <div id="box-75">
+                <h2 id="about-title">HOW IT WORKS</h2>
+                <p id="about-body">Real-Time Data Collection: Our sensors diligently track your plant's environment, noting the temperature, humidity, and moisture levels. This data is sent to our system using the reliable MQTT protocol. <br>
+                    Data Processing and Storage: Upon receiving the data, we store it securely in our database, ensuring every reading is logged for detailed tracking of your plant's health.<br>                    
+                    AI-Powered Insights: Here's where the magic happens! Our AI, powered by OpenAI, analyzes each reading and generates a witty, insightful comment about your plant's current condition. Think of it as having a plant-savvy friend who never misses a beat. <br>                   
+                    User-Friendly Dashboard: All this information is presented on a sleek, intuitive dashboard. You can view the latest readings and AI comments, offering both fun and practical insights into your plant's wellbeing. <br><br>                
+                    Whether you're a green thumb or a plant newbie, our system makes plant care engaging, informative, and a tiny bit whimsical! </p>
+            </div>
+            <div id="box-25">
+                <img id="about-img" src="./img/about.png">
+            </div>
+        </div>
+    </section>
 
+    <section id="data">
+        <div class="row">
+            <div class="hero">
+                <h2 id="data-title">HOW'S YOUR PAL DOING TODAY?</h2>
+                <p id="data-animate">
+                    TEMPERATURE: <span id="temperature"></span>°C
+                    HUMIDITY: <span id="humidity"></span>%
+                    MOISTURE: <span id="moisture"></span>%
+                    TIMESTAMP: <span id="timestamp"></span>
+                    COMMENT: <span id="aiComment"></span>
+                </p>
+                <div id="data-row-img">
+                    <img id="data-img" src="./img/data.png">
+                    <div id="circle"></div>
+                    <div id="square"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="readings">
+        <div class="simple-readings">
+            <div id="reading-display">
+                <p>Temperature: </p>
+                <p>Humidity: </p>
+                <p>Moisture: </p>
+                <p>Plant's health: </p>
+            </div>
+        </div>
+    </section>
     <!-- Include the data.js script -->
     <script src="data.js" type="module"></script>
 </body>

@@ -2,10 +2,10 @@
   "plantBuddy": {
     "readings": [
       {
-        "temp": 22.5683403,
-        "humidity": 67.18145752,
+        "temp": 25.3683815,
+        "humidity": 44.2975235,
         "moisture": 24,
-        "timestamp": 1708701
+        "timestamp": 1361742
       }
     ]
   }
