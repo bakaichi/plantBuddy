@@ -11,7 +11,7 @@ async function fetchLatestData(){
 
     return latestReading;
   } catch(error) {
-    console.error('Error fetching data: ', error);
+    console.error('Error fetching data from server: ', error);
     return fetchDataFromLocal();
   }
 }
