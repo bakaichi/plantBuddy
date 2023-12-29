@@ -11,7 +11,23 @@ async function fetchLatestData(){
 
     return latestReading;
   } catch(error) {
-    console.error('Error fetching data: '. error);
+    console.error('Error fetching data: ', error);
+    return fetchDataFromLocal();
+  }
+}
+
+// fallback in case server is not online, fetches data from local file
+async function fetchDataFromLocal() {
+  try {
+    const response = await fetch('../mqttData.json');
+    if (!response.ok) {
+      throw new Error('Local data fetch failed.');
+    }
+    const mqttData = await response.json();
+    const readings = mqttData.plantBuddy.readings;
+    return readings.length > 0 ? readings[readings.length - 1] : null;
+  } catch (error) {
+    console.error('Error fetching data from local file: ', error);
     return null;
   }
 }
@@ -34,7 +50,7 @@ async function updateLatestDataOnPage() {
   const latestData = await fetchLatestData();
   const roundedData = roundData(latestData);
 
-  if (roundData) {
+  if (latestData) {
     document.getElementById('temperature').textContent = roundedData.temp;
     document.getElementById('humidity').textContent = roundedData.humidity;
     document.getElementById('moisture').textContent = roundedData.moisture;
