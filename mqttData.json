@@ -2,10 +2,34 @@
   "plantBuddy": {
     "readings": [
       {
-        "temp": 25.3683815,
-        "humidity": 44.2975235,
+        "temp": 18.83838272,
+        "humidity": 47.70190048,
         "moisture": 24,
-        "timestamp": 1361742
+        "timestamp": 95797
+      },
+      {
+        "temp": 18.86842346,
+        "humidity": 47.37401199,
+        "moisture": 24,
+        "timestamp": 102762
+      },
+      {
+        "temp": 18.90834045,
+        "humidity": 47.32096481,
+        "moisture": 24,
+        "timestamp": 109725
+      },
+      {
+        "temp": 18.94838142,
+        "humidity": 47.08657074,
+        "moisture": 24,
+        "timestamp": 116689
+      },
+      {
+        "temp": 22.67838287,
+        "humidity": 42.17612076,
+        "moisture": 24,
+        "timestamp": 813071
       }
     ]
   }
