@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css"/>
-
+    <link rel="favicon" type="image/jpg" href="./img/favicon.ico"/>
+    
     <title>Plant Buddy</title>    
 </head>
 <body>
@@ -30,11 +31,13 @@
         <div class="row">
             <div id="box-75">
                 <h2 id="about-title">HOW IT WORKS</h2>
-                <p id="about-body">Real-Time Data Collection: Our sensors diligently track your plant's environment, noting the temperature, humidity, and moisture levels. This data is sent to our system using the reliable MQTT protocol. <br>
-                    Data Processing and Storage: Upon receiving the data, we store it securely in our database, ensuring every reading is logged for detailed tracking of your plant's health.<br>                    
-                    AI-Powered Insights: Here's where the magic happens! Our AI, powered by OpenAI, analyzes each reading and generates a witty, insightful comment about your plant's current condition. Think of it as having a plant-savvy friend who never misses a beat. <br>                   
-                    User-Friendly Dashboard: All this information is presented on a sleek, intuitive dashboard. You can view the latest readings and AI comments, offering both fun and practical insights into your plant's wellbeing. <br><br>                
-                    Whether you're a green thumb or a plant newbie, our system makes plant care engaging, informative, and a tiny bit whimsical! </p>
+                <ul id="about-body">
+                    <li>Real-Time Data Collection: Our sensors diligently track your plant's environment, noting the temperature, humidity, and moisture levels. This data is sent to our system using the reliable MQTT protocol.</li>
+                    <li>Data Processing and Storage: Upon receiving the data, we store it securely in our database, ensuring every reading is logged for detailed tracking of your plant's health.</li>
+                    <li>AI-Powered Insights: Here's where the magic happens! Our AI, powered by OpenAI, analyzes each reading and generates a witty, insightful comment about your plant's current condition. Think of it as having a plant-savvy friend who never misses a beat.</li>
+                    <li>User-Friendly Dashboard: All this information is presented on a sleek, intuitive dashboard. You can view the latest readings and AI comments, offering both fun and practical insights into your plant's wellbeing.                
+                        Whether you're a green thumb or a plant newbie, our system makes plant care engaging, informative, and a tiny bit whimsical!</li>
+                </ul>
             </div>
             <div id="box-25">
                 <img id="about-img" src="./img/about.png">
@@ -50,8 +53,6 @@
                     TEMPERATURE: <span id="temperature"></span>°C
                     HUMIDITY: <span id="humidity"></span>%
                     MOISTURE: <span id="moisture"></span>%
-                    TIMESTAMP: <span id="timestamp"></span>
-                    COMMENT: 
                 </p>
                 <div id="data-row-img">
                     <img id="data-img" src="./img/data.png">
@@ -63,14 +64,10 @@
     </section>
 
     <section id="readings">
+        <div class="row">
         <div class="simple-readings">
-            <div id="reading-display">
-                <p>Temperature: </p>
-                <p>Humidity: </p>
-                <p>Moisture: </p>
-                <p>Plant's health: <span id="aiComment"></span> </p>
-            </div>
-        </div>
+                <h2 id="reading-title"> PLANT'S HEALTH</h2>  <p><br><span id="aiComment"></span> </p>
+        </div></div>
     </section>
     <!-- Include the data.js script -->
     <script src="data.js" type="module"></script>
